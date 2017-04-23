@@ -2,10 +2,17 @@
 #include <sys/wait.h>
 #include <error.c>
 
+static void sig_int(int);
+
 int main(void) {
     char buf[MAXLINE];
     pid_t pid;
     int status;
+
+    // 这里获取 SIGINT 信息（Ctrl+C 或 kill），并打印
+    if (signal(SIGINT, sig_int) == SIG_ERR) {
+        err_sys("signal error");
+    }
 
     // print prompt
     printf("%% ");
@@ -30,4 +37,8 @@ int main(void) {
     }
 
     exit(0);
+}
+
+void sig_int(int signo) {
+    printf("interrupt\n%% ");
 }
