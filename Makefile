@@ -123,32 +123,192 @@ sh/fast:
 	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/build
 .PHONY : sh/fast
 
-01/sh.o: 01/sh.c.o
+#=============================================================================
+# Target rules for targets named cp
 
-.PHONY : 01/sh.o
+# Build rule for target.
+cp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cp
+.PHONY : cp
+
+# fast build rule for target.
+cp/fast:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/build
+.PHONY : cp/fast
+
+#=============================================================================
+# Target rules for targets named getpid
+
+# Build rule for target.
+getpid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 getpid
+.PHONY : getpid
+
+# fast build rule for target.
+getpid/fast:
+	$(MAKE) -f CMakeFiles/getpid.dir/build.make CMakeFiles/getpid.dir/build
+.PHONY : getpid/fast
+
+#=============================================================================
+# Target rules for targets named cp2
+
+# Build rule for target.
+cp2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cp2
+.PHONY : cp2
+
+# fast build rule for target.
+cp2/fast:
+	$(MAKE) -f CMakeFiles/cp2.dir/build.make CMakeFiles/cp2.dir/build
+.PHONY : cp2/fast
+
+#=============================================================================
+# Target rules for targets named ls
+
+# Build rule for target.
+ls: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ls
+.PHONY : ls
+
+# fast build rule for target.
+ls/fast:
+	$(MAKE) -f CMakeFiles/ls.dir/build.make CMakeFiles/ls.dir/build
+.PHONY : ls/fast
+
+src/intro/cp.o: src/intro/cp.c.o
+
+.PHONY : src/intro/cp.o
 
 # target to build an object file
-01/sh.c.o:
-	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/01/sh.c.o
-.PHONY : 01/sh.c.o
+src/intro/cp.c.o:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/src/intro/cp.c.o
+.PHONY : src/intro/cp.c.o
 
-01/sh.i: 01/sh.c.i
+src/intro/cp.i: src/intro/cp.c.i
 
-.PHONY : 01/sh.i
+.PHONY : src/intro/cp.i
 
 # target to preprocess a source file
-01/sh.c.i:
-	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/01/sh.c.i
-.PHONY : 01/sh.c.i
+src/intro/cp.c.i:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/src/intro/cp.c.i
+.PHONY : src/intro/cp.c.i
 
-01/sh.s: 01/sh.c.s
+src/intro/cp.s: src/intro/cp.c.s
 
-.PHONY : 01/sh.s
+.PHONY : src/intro/cp.s
 
 # target to generate assembly for a file
-01/sh.c.s:
-	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/01/sh.c.s
-.PHONY : 01/sh.c.s
+src/intro/cp.c.s:
+	$(MAKE) -f CMakeFiles/cp.dir/build.make CMakeFiles/cp.dir/src/intro/cp.c.s
+.PHONY : src/intro/cp.c.s
+
+src/intro/cp2.o: src/intro/cp2.c.o
+
+.PHONY : src/intro/cp2.o
+
+# target to build an object file
+src/intro/cp2.c.o:
+	$(MAKE) -f CMakeFiles/cp2.dir/build.make CMakeFiles/cp2.dir/src/intro/cp2.c.o
+.PHONY : src/intro/cp2.c.o
+
+src/intro/cp2.i: src/intro/cp2.c.i
+
+.PHONY : src/intro/cp2.i
+
+# target to preprocess a source file
+src/intro/cp2.c.i:
+	$(MAKE) -f CMakeFiles/cp2.dir/build.make CMakeFiles/cp2.dir/src/intro/cp2.c.i
+.PHONY : src/intro/cp2.c.i
+
+src/intro/cp2.s: src/intro/cp2.c.s
+
+.PHONY : src/intro/cp2.s
+
+# target to generate assembly for a file
+src/intro/cp2.c.s:
+	$(MAKE) -f CMakeFiles/cp2.dir/build.make CMakeFiles/cp2.dir/src/intro/cp2.c.s
+.PHONY : src/intro/cp2.c.s
+
+src/intro/getpid.o: src/intro/getpid.c.o
+
+.PHONY : src/intro/getpid.o
+
+# target to build an object file
+src/intro/getpid.c.o:
+	$(MAKE) -f CMakeFiles/getpid.dir/build.make CMakeFiles/getpid.dir/src/intro/getpid.c.o
+.PHONY : src/intro/getpid.c.o
+
+src/intro/getpid.i: src/intro/getpid.c.i
+
+.PHONY : src/intro/getpid.i
+
+# target to preprocess a source file
+src/intro/getpid.c.i:
+	$(MAKE) -f CMakeFiles/getpid.dir/build.make CMakeFiles/getpid.dir/src/intro/getpid.c.i
+.PHONY : src/intro/getpid.c.i
+
+src/intro/getpid.s: src/intro/getpid.c.s
+
+.PHONY : src/intro/getpid.s
+
+# target to generate assembly for a file
+src/intro/getpid.c.s:
+	$(MAKE) -f CMakeFiles/getpid.dir/build.make CMakeFiles/getpid.dir/src/intro/getpid.c.s
+.PHONY : src/intro/getpid.c.s
+
+src/intro/ls.o: src/intro/ls.c.o
+
+.PHONY : src/intro/ls.o
+
+# target to build an object file
+src/intro/ls.c.o:
+	$(MAKE) -f CMakeFiles/ls.dir/build.make CMakeFiles/ls.dir/src/intro/ls.c.o
+.PHONY : src/intro/ls.c.o
+
+src/intro/ls.i: src/intro/ls.c.i
+
+.PHONY : src/intro/ls.i
+
+# target to preprocess a source file
+src/intro/ls.c.i:
+	$(MAKE) -f CMakeFiles/ls.dir/build.make CMakeFiles/ls.dir/src/intro/ls.c.i
+.PHONY : src/intro/ls.c.i
+
+src/intro/ls.s: src/intro/ls.c.s
+
+.PHONY : src/intro/ls.s
+
+# target to generate assembly for a file
+src/intro/ls.c.s:
+	$(MAKE) -f CMakeFiles/ls.dir/build.make CMakeFiles/ls.dir/src/intro/ls.c.s
+.PHONY : src/intro/ls.c.s
+
+src/intro/sh.o: src/intro/sh.c.o
+
+.PHONY : src/intro/sh.o
+
+# target to build an object file
+src/intro/sh.c.o:
+	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/src/intro/sh.c.o
+.PHONY : src/intro/sh.c.o
+
+src/intro/sh.i: src/intro/sh.c.i
+
+.PHONY : src/intro/sh.i
+
+# target to preprocess a source file
+src/intro/sh.c.i:
+	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/src/intro/sh.c.i
+.PHONY : src/intro/sh.c.i
+
+src/intro/sh.s: src/intro/sh.c.s
+
+.PHONY : src/intro/sh.s
+
+# target to generate assembly for a file
+src/intro/sh.c.s:
+	$(MAKE) -f CMakeFiles/sh.dir/build.make CMakeFiles/sh.dir/src/intro/sh.c.s
+.PHONY : src/intro/sh.c.s
 
 # Help Target
 help:
@@ -157,11 +317,27 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... sh"
-	@echo "... 01/sh.o"
-	@echo "... 01/sh.i"
-	@echo "... 01/sh.s"
+	@echo "... cp"
+	@echo "... edit_cache"
+	@echo "... getpid"
+	@echo "... cp2"
+	@echo "... ls"
+	@echo "... src/intro/cp.o"
+	@echo "... src/intro/cp.i"
+	@echo "... src/intro/cp.s"
+	@echo "... src/intro/cp2.o"
+	@echo "... src/intro/cp2.i"
+	@echo "... src/intro/cp2.s"
+	@echo "... src/intro/getpid.o"
+	@echo "... src/intro/getpid.i"
+	@echo "... src/intro/getpid.s"
+	@echo "... src/intro/ls.o"
+	@echo "... src/intro/ls.i"
+	@echo "... src/intro/ls.s"
+	@echo "... src/intro/sh.o"
+	@echo "... src/intro/sh.i"
+	@echo "... src/intro/sh.s"
 .PHONY : help
 
 

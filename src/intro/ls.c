@@ -1,6 +1,6 @@
-#include "../include/apue.h"
-#include "/usr/include/dirent.h"
-#include "../lib/error.c"
+#include <apue.h>
+#include <error.c>
+#include <dirent.h>
 
 int main(int argc, char *argv[]) {
     DIR *dp;

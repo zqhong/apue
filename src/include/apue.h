@@ -12,19 +12,19 @@
 #define _XOPEN_SOURCE 700
 #endif
 
-#include "/usr/include/sys/types.h"		/* some systems still require this */
-#include "/usr/include/sys/stat.h"
-#include "/usr/include/sys/termios.h"	/* for winsize */
+#include <sys/types.h>		/* some systems still require this */
+#include <sys/stat.h>
+#include <sys/termios.h>	/* for winsize */
 #if defined(MACOS) || !defined(TIOCGWINSZ)
-#include "/usr/include/sys/ioctl.h"
+#include <sys/ioctl.h>
 #endif
 
-#include "/usr/include/stdio.h"		/* for convenience */
-#include "/usr/include/stdlib.h"		/* for convenience */
-#include "/usr/include/linux/stddef.h"		/* for offsetof */
-#include "/usr/include/string.h"		/* for convenience */
-#include "/usr/include/unistd.h"		/* for convenience */
-#include "/usr/include/signal.h"		/* for SIG_ERR */
+#include <stdio.h>		/* for convenience */
+#include <stdlib.h>		/* for convenience */
+#include <stddef.h>		/* for offsetof */
+#include <string.h>		/* for convenience */
+#include <unistd.h>		/* for convenience */
+#include <signal.h>		/* for SIG_ERR */
 
 #define	MAXLINE	4096			/* max line length */
 
@@ -66,15 +66,15 @@ ssize_t	 writen(int, const void *, size_t);	/* {Prog readn_writen} */
 
 int		 fd_pipe(int *);					/* {Prog sock_fdpipe} */
 int		 recv_fd(int, ssize_t (*func)(int,
-		         const void *, size_t));	/* {Prog recvfd_sockets} */
+										 const void *, size_t));	/* {Prog recvfd_sockets} */
 int		 send_fd(int, int);					/* {Prog sendfd_sockets} */
 int		 send_err(int, int,
-		          const char *);			/* {Prog senderr} */
+					 const char *);			/* {Prog senderr} */
 int		 serv_listen(const char *);			/* {Prog servlisten_sockets} */
 int		 serv_accept(int, uid_t *);			/* {Prog servaccept_sockets} */
 int		 cli_conn(const char *);			/* {Prog cliconn_sockets} */
 int		 buf_args(char *, int (*func)(int,
-		          char **));				/* {Prog bufargs} */
+										 char **));				/* {Prog bufargs} */
 
 int		 tty_cbreak(int);					/* {Prog raw} */
 int		 tty_raw(int);						/* {Prog raw} */
@@ -86,7 +86,7 @@ int		 ptym_open(char *, int);			/* {Prog ptyopen} */
 int		 ptys_open(char *);					/* {Prog ptyopen} */
 #ifdef	TIOCGWINSZ
 pid_t	 pty_fork(int *, char *, int, const struct termios *,
-		          const struct winsize *);	/* {Prog ptyfork} */
+				   const struct winsize *);	/* {Prog ptyfork} */
 #endif
 
 int		lock_reg(int, int, int, off_t, int, off_t); /* {Prog lockreg} */

@@ -1,5 +1,5 @@
-#include "../include/apue.h"
-#include "../lib/error.c"
+#include <apue.h>
+#include <error.c>
 
 int main(void) {
     int c;

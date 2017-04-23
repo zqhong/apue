@@ -1,6 +1,6 @@
-#include "../include/apue.h"
-#include "../lib/error.c"
-#include "/usr/include/sys/wait.h"
+#include <apue.h>
+#include <sys/wait.h>
+#include <error.c>
 
 int main(void) {
     char buf[MAXLINE];

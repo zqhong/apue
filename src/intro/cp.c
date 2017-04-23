@@ -1,5 +1,5 @@
-#include "../include/apue.h"
-#include "../lib/error.c"
+#include <apue.h>
+#include <error.c>
 
 #define BUFFSIZE 4096
 
