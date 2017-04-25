@@ -20,3 +20,8 @@ add_executable(userinfo src/01_intro/userinfo.c)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin/02_standstard)
 add_executable(conf src/02_standard/conf.c)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin/03_fileio)
+add_executable(lseek src/03_fileio/lseek.c)
+add_executable(hole src/03_fileio/hole.c)
+add_executable(cat src/03_fileio/cat.c)
