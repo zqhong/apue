@@ -8,6 +8,8 @@ include_directories(
         "/usr/local/include"
 )
 
+set(CMAKE_LIBRARY_PATH  ./lib)
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin/01_intro)
 add_executable(cp src/01_intro/cp.c)
 add_executable(cp2 src/01_intro/cp2.c)
@@ -25,3 +27,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin/03_fileio)
 add_executable(lseek src/03_fileio/lseek.c)
 add_executable(hole src/03_fileio/hole.c)
 add_executable(cat src/03_fileio/cat.c)
+add_executable(fileflags src/03_fileio/fileflags.c)
+add_executable(getflag src/03_fileio/getflag.c)
+
+add_library(setflag src/03_fileio/setflag.c)
